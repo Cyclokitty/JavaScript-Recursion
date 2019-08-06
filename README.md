@@ -26,3 +26,6 @@ if (we reach success) {yay! we are done!};
 return x * factorial(x - 1);
 
 ```
+
+## Things to do:
+Learn more ways to use recursion, when to use recursion, when NOT to use recursion.
