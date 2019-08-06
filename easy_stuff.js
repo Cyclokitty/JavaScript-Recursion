@@ -30,5 +30,12 @@ function palindrome2(str) {
 // we'll use a for loop
 
 function palindrome3(str) {
+    let newstr = str.split('');
 
+    let revString = [];
+    for (let i = newstr.length - 1; i >= 0; i--) {
+        revString.push(newstr[i]);
+    }
+
+    return str === revString.join('') ? true : false;  
 }
