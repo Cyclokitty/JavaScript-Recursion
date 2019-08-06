@@ -11,4 +11,7 @@ const factorial = num => {
 }
 
 // recursion excursion!
-
+const factorialRecursion = num => {
+    if (num < 0 || num === 0) return 1;
+    return num * factorialRecursion(num - 1);
+}

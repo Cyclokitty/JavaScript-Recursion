@@ -7,6 +7,22 @@
 
 ```javascript
 
+if (we reach our fail-safe) {return};
 
+```
+
+2. Base case
+
+```javascript
+
+if (we reach success) {yay! we are done!};
+
+```
+
+3. The actual recursion
+
+```javascript
+
+return x * factorial(x - 1);
 
 ```
