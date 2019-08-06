@@ -26,9 +26,9 @@ function palindrome2(str) {
     }
 }
 
-// let's not use the built-in functions
+// let's not use the built-in reverse() function
 // we'll use a for loop
 
 function palindrome3(str) {
-    
+
 }
