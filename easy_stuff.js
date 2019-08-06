@@ -39,3 +39,33 @@ function palindrome3(str) {
 
     return str === revString.join('') ? true : false;  
 }
+
+// let's use recursion!
+
+// helper functions:
+
+// find the first letter:
+// we use .slice() to not mangle the original str
+function firstLetter(str) {
+    return str.slice(0, 1);
+}
+
+// find the last letter:
+function lastLetter(str) {
+    return str.slice(-1);
+}
+
+// find the middle of the word after knocking off the first and last letterss:
+function middleWord(str) {
+    return str.slice(1, -1);
+}
+
+function recursionPalindrome(str) {
+    if (str.length < 2) return true;
+
+    if (firstLetter(str) === lastLetter(str) ) {
+        return recursionPalindrome(middleWord(str));
+    }
+
+    return false;
+}
